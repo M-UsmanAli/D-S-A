@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}            % Report class in 11 points
+\parindent0pt  \parskip10pt             % make block paragraphs
+\usepackage{graphicx}
+\usepackage{listings}
+\graphicspath{ {images/} }
+\usepackage{graphicx} %  graphics header file
+\begin{document}
+\begin{titlepage}
+    \centering
+  \vfill
+    \includegraphics[width=8cm]{uni_logo.png} \\ 
+	\vskip2cm
+    {\bfseries\Large
+	Data Structure and Algorithms \\ (CS13217)\\
+	
+	\vskip2cm
+	Lab Report 
+	 
+	\vskip2cm
+	}    
+
+\begin{center}
+\begin{tabular}{ l l  } 
+
+Name: & M.Usman Ali \\ 
+Registration \#: & SEU-F16-135 \\ 
+Lab Report \#: & 02 \\ 
+ Dated:& 30-04-2018\\ 
+Submitted To:& Sir. Usman Ahmed\\ 
+
+ %\hline
+\end{tabular}
+\end{center}
+    \vfill
+    The University of Lahore, Islamabad Campus\\
+Department of Computer Science \& Information Technology
+\end{titlepage}
+
+
+    
+    {\bfseries\Large
+\centering
+	Experiment \# 2 \\
+
+Queue with Array implementation \\
+	
+	}    
+ \vskip1cm
+ \textbf {Objective}\\ The objective of this session is to understand the various operations on queues using array structure in C++. 
+ 
+ \textbf {Software Tool} \\
+1. Language: C++\\
+
+\section{Theory }              
+
+
+\section{Task}  
+\subsection{Procedure: Task 2 }     
+Write a C++ code to perform insertion and deletion in queue using arrays
+
+Create a complete menu for the above options and also create option for reusing it.
+
+\begin{figure*}
+\centering
+  \includegraphics[width=12cm,height=6cm,keepaspectratio]{125.png}
+\caption{Link List}
+\label{Figure:3}    
+\end{figure*}
+
+\begin{lstlisting}[language=C++]
+#include<iostream>
+#include<queue>
+using namespace std;
+int main()
+{
+	int x=-1,y=0;
+	int arr[10];
+	char op;
+	cout<<"press 1 to push"<<endl;
+	cout<<"press 2 to delete"<<endl;
+	cout<<"press 3 to display"<<endl;
+	cout<<"press 4 to exit"<<endl;
+	line:
+		cin>>op;
+		switch(op){
+			case'1':
+				cout<<"enter no. to push"<<endl;
+				x++;
+				cin>>arr[x];
+				cout<<"Pushed at "<<x<<endl;
+				break;
+			case'2':
+				cout<<"deleting"<<endl;
+				y++;
+				break;
+			case'3':
+				for(int i=0;i<=x;i++)
+				{
+					cout<<arr[i]<<endl;
+				}
+				break;
+			case'4':
+				exit;
+		}
+		goto line;
+}
+\end{lstlisting}
+
+\section{Conclusion}  
+In this lab we learned how to create queue and display it on a screen and its various functions.
+
+ 
+\end{document}                          % The required last line
