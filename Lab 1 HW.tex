@@ -1,0 +1,125 @@
+\documentclass[11pt]{article}            % Report class in 11 points
+\parindent0pt  \parskip10pt             % make block paragraphs
+\usepackage{graphicx}
+\usepackage{listings}
+\graphicspath{ {images/} }
+\usepackage{graphicx} %  graphics header file
+\begin{document}
+\begin{titlepage}
+    \centering
+  \vfill
+    \includegraphics[width=8cm]{uni_logo.png} \\ 
+	\vskip2cm
+    {\bfseries\Large
+	Data Structures and Algorithms \\ ( CS09203 )\\
+	
+	\vskip2cm
+	Lab Report 
+	 
+	\vskip2cm
+	}    
+
+\begin{center}
+\begin{tabular}{ l l  } 
+
+Name: & M.Usman Ali \\ 
+Registration \#: & SEU-F16-135 \\ 
+Lab Report \#: & 01 \\ 
+ Dated:& 30-04-2018\\ 
+Submitted To:& Mr. Usman Ahmed\\ 
+
+ %\hline
+\end{tabular}
+\end{center}
+    \vfill
+    The University of Lahore, Islamabad Campus\\
+Department of Computer Science \& Information Technology
+\end{titlepage}
+
+
+    
+    {\bfseries\Large
+\centering
+	Experiment \# 1 \\
+
+Introduction to Arrays and its operation\\
+	
+	}    
+ \vskip1cm
+ \textbf {Objective}\\ The objectives of this lab session are to understand the basic and various operations on arrays in C++. 
+ 
+ \textbf {Software Tool}\\
+1. Code Blocks with GCC compiler\\
+2. \\
+3. \\
+
+\section{Theory }              We have already studied array in our computer programming course. We would be using the knowledge we learned there to implement different operation on arrays.
+Traversing Linear Arrays:-
+Let A be the collection of data elements stored in the memory of the computer. Suppose we want to print the contents of each element of A or suppose we want to count the number of elements of A with a given property. This can be accomplished by traversing A that is by accessing and Processing each element of A exactly once.
+The following algorithm traverses a linear array. The simplicity of the algorithm comes from the fact that LA is a linear structure. Other linear structures such as linked list can also be easily traversed. On the other hand the traversal of non-linear structures such as trees and graphs is considerably more complicated.
+\section{Task}  
+\subsection{Procedure: Task 1 }     
+
+\begin{figure*}
+\centering
+  \includegraphics[width=12cm,height=6cm,keepaspectratio]{123.png}
+\caption{output}
+\label{Figure:3}    
+\end{figure*}
+Write a C++ program to implement all the above described algorithms and display the following menu and ask the user for the desired operation.
+
+\subsection{ }     
+
+\begin{lstlisting}[language=Python]
+ 
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a[10],b=0,c;
+	int d=0,co=0,n;
+	loop:
+	{
+	cout<<"main menu"<<endl;
+	cout<<"1: Enter element in the array \n";
+	cout<<"2: for traverse the array \n";
+	cin>>n;
+	switch(n)
+	{
+		case'1':
+			{
+			cout<<"Enter the array less then 10: ";
+			cin>>c;
+			cout<<"Enetr the element in the array: "<<endl;
+			while(b<c)
+			{
+				co++;
+				cin>>a[b];
+				b++;
+			}
+			}
+		break;
+		case'2':
+			{
+			cout<<"The traverse of array is: "<<endl;
+			b=d;
+			while(b<c)
+			{
+				cout<<a[b]<<" ";
+				b++;
+			}
+			}
+			break;
+	}
+}
+		goto loop;
+		return 0;
+		
+}
+\end{lstlisting}
+
+\section{Conclusion}  
+In todays lab we have discussed how we  can create 1D and 2d array and how can we implement it on computer.
+
+ 
+\end{document}                          % The required last line
